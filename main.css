@@ -63,9 +63,15 @@ a{
 .container h4{
     font-weight: normal;
 }
-
 .container h2, .container h4, .container p, .container h3{
     padding:0 70px;
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex{
+    flex:1 1 50%;
 }
 
 /*header*/
@@ -75,7 +81,8 @@ a{
 .header div{
     margin-top:10px;
 }
-.logo{
+
+.logo-header{
     font-family: Homemade Apple;
     font-style: normal;
     font-weight: normal;
@@ -103,7 +110,6 @@ a{
 /*top*/
 .top-header{
     background: #E5E5E5;
-    width:100%;
 }
 .top-header div h2{
     font-family: Gilroy;
