@@ -1,80 +1,300 @@
-body{
+:root{
+    font-size:62.5%;
+}
+*{
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
     margin:0;
-    padding:0;
-    font-family:'Times New Roman', Times, serif;
-    font-size:18px;
-    box-sizing: border-box;
+    padding: 0;
+}
+h1, h2, h3, h4{
+    margin-bottom: 2rem;
 }
 h1{
-    font-size:40px
+    font-size: 5.4rem;
 }
 h2{
-    font-size:36px
+    font-size:4.2rem;
 }
 h3{
-    font-size:30px
+    font-size:3.5rem;
 }
 h4{
-    font-size:25px
+    font-size:2.5rem;
 }
-.text-center{
-    text-align: center;
+a{
+    text-decoration: none;
 }
-.flex-row{
+/*utilities*/
+.container{
+    width:100vw;
+    height:100vh;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.container > *{
+    width:100%;
 }
 .flex-column{
     display: flex;
     flex-direction: column;
 }
-.flex-basis{
-    flex-basis: 50%;
+.flex-row{
+    display: flex;
+    flex-direction: row;
 }
-.flex-grow{
-    flex-grow: 1;
-}
-.flex{
-    flex:0 1 100%;
+.flex-center{
+    justify-content: center;
+    align-items: center;
 }
 .justify-center{
     justify-content: center;
 }
-.space-between{
-    justify-content: space-between;
-}
-.align-center{
-    align-items: center;
-}
-.btn{
-    font-size:20px;
-    padding:10px;
-}
-li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-    color: #000000;;
-}
-.auto{
+.margin-auto{
     margin:auto;
 }
-.container h4{
-    font-weight: normal;
+.text-center{
+    text-align: center;
 }
-.container h2, .container h4, .container p, .container h3{
-    padding:0 70px;
+.text-right{
+    text-align: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.hidden{
+    display: none;
+}
+.flex-basis{
+    flex-basis: 50%;
+}
+.flex{
+    display: flex;
 }
 .flex-wrap{
     display: flex;
     flex-wrap: wrap;
 }
-.flex{
-    flex:1 1 50%;
+.flex-grow{
+    flex-grow: 1;
+}
+
+/*buttons and links*/
+.btn{
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
 }
 
 /*header*/
+header{
+    padding:20px;
+}
+header p{
+    margin-left:30px;
+}
+header a{
+    margin-right:30px;
+    color:#F7941E;
+}
+.get-finder{
+    border:1px solid #F7941E;
+    padding:10px;
+    border-radius: 5px;
+}
+.menu li a{
+    color:#000;
+}
+
+
+/*first row*/
+.first-row{
+    height:500px;
+    background-color: #FAFAFA;
+}
+.find-gift-first-row{
+    margin:auto;
+}
+.find-gift-first-row h2, .find-gift-first-row p, .find-gift-first-row a{
+    margin:20px 60px;
+}
+.find-gift-btn-first-row{
+    background-color:#F7941E;
+    padding:10px;
+    color:#fff;
+    border-radius: 5px;
+}
+.image-first-row{
+    background-image: url('images/pic1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+
+/*second row*/
+.second-row{
+    background-color: #FAFAFA;
+    height:500px;
+}
+.find-gift-second-row{
+    margin:auto;
+}
+.find-gift-second-row h4, .find-gift-second-row p, .find-gift-second-row a{
+    margin:20px 60px;
+}
+.find-gift-second-row h4{
+    font-weight: normal;
+}
+.find-gift-btn-second-row{
+    border:1px solid #F7941E;
+    padding:10px;
+    color:#F7941E;
+    border-radius: 5px;
+}
+.image-second-row{
+    background-image: url('images/pic2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+/*third row*/
+.gift-occassion{
+    margin-top:20px;
+}
+.gift-occassion .heading p{
+    margin-bottom:20px;
+}
+.gift-images{
+    width:80%;
+    margin:auto;
+}
+.image-container{
+    background-color: #FAFAFA;
+    float: left;
+}
+.image-container img{
+    width:90%;
+}
+.image-container p{
+    margin:10px 0;
+}
+
+
+/*get started*/
+.get-started{
+    background-color: #F7941E;
+    height: 200px
+}
+.get-started-text{
+    margin-left:50px;
+}
+.get-started-find-btn{
+    color:#fff;
+    background-color: #000;
+    border-radius: 5px;
+    padding:10px;
+}
+.get-started-work-btn{
+    color:#000;
+    background-color: transparent;
+    border:1px solid #000;
+    border-radius: 5px;
+    padding:10px;
+}
+
+
+
+/*blog*/
+.blog{
+    margin-top:40px auto;
+    width:80%;
+}
+.blog .heading p{
+    margin-bottom: 20px;
+}
+.blog-image-container{
+    background-color: #000;
+    height:300px;
+}
+.blog-image{
+    background-image: url('./images/pic8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:80%;
+    background-position: 50% 50%;
+}
+.blog-text{
+    color:#fff;
+    margin:auto 50px;
+}
+.blog-text a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.blog-texts{
+    height:250px;
+}
+.blog-first-text{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    padding:60px;
+}
+.blog-second-text{
+    padding:60px;
+}
+.blog-first-text h4,.blog-second-text h4,
+ .blog-first-text p, .blog-second-text p,
+ .blog-first-text a, .blog-second-text a{
+    margin-bottom: 5px;
+}
+.blog-second-text a, .blog-first-text a{
+    color:#000;
+}
+
+
+/*footer*/
+footer{
+    background-color: #FAFAFA;
+    height:300px;
+}
+.footer-first-row {
+    margin-top:40px;
+    padding:40px 10px 10px 10px;
+}
+hr{
+    border:1px solid #000;
+    margin:auto;
+    width:80%;
+}
+.footer-socials{
+    margin:10px auto;
+}
+.footer-socials a{
+    color: #fff;
+}
+.footer-socials a i{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #000;
+    font-size:16px;
+    margin:20px 20px 50px 20px;
+}
+/*media queries*/
+
+/*
 .header{
     background-color: #FAFAFA;
 }
@@ -107,7 +327,7 @@ a{
     color: #F7941E;
 }
 
-/*top*/
+
 .top-header{
     background: #E5E5E5;
 }
@@ -136,7 +356,7 @@ a{
     background-repeat: no-repeat;
 }
 
-/*next top*/
+
 .top-img-2{
     background-image: url(images/pic2.jpg);
     background-size: cover;
@@ -156,7 +376,7 @@ a{
     margin:0 70px;
 }
 
-/*gift images*/
+
 .occassions-gift{
     width:85%;
 }
@@ -188,7 +408,7 @@ a{
     height:200px;
 }
 
-/*contact*/
+
 .contact{
     background: #F7941E;
     justify-content: space-between;
@@ -210,7 +430,6 @@ a{
     text-transform: uppercase;
 }
 
-/*about*/
 .about-img{
     background: #231F20;
     color:#FFFFFF;
@@ -237,7 +456,6 @@ a{
     margin:0 70px;
 }
 
-/*next about*/
 .about-text{
     width: 80%;
 }
@@ -259,7 +477,7 @@ a{
     padding:10px;
 }
 
-/*footer*/
+
 .footer{
     background: #FAFAFA;
     margin-top:40px;
@@ -299,4 +517,146 @@ hr{
 
 
 
+*/
+/*
+<html lang="en">
+    <head>
+        <title>Gift-Freebie</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A freebie gift web application">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
 
+        <!--heading-->
+        <div class="header flex-row">
+            <div class="flex-basis">
+                <a href="#" class="logo-header">Logo</a>
+            </div>
+            <ul class="flex-row flex-basis text-center">
+                <li class="flex-basis"><a href="#">Home</a></li>
+                <li class="flex-basis"><a href="#">About Us</a></li>
+                <li class="flex-basis"><a href="#">Services</a></li>
+                <li class="flex-basis"><a href="#">Blog</a></li>
+            </ul>
+            <div class="flex-basis">
+                <a href="#" class="get-started">Gift Finder</a>
+            </div>
+        </div>
+
+        <!--top header-->
+        <div class="top-header flex-wrap flex-row">
+            <div class="container flex">
+                <h2>Find a gift for your wife or girlfriend</h2>
+                <p>Struggling to find a gift for your wife or girlfriend? No problem!</p>
+                <a href="#" class="btn find-gift-now">Find Gift Now</a>
+            </div>
+            <div class="top-img flex"></div>
+        </div>
+        <!--next top-->
+        <div class="top-header flex-wrap flex-row">
+            <div class="top-img-2 flex"></div>
+            <div class="container flex">
+                <h2>How we work</h2>
+                <p>We’ve actually already asked hundreds of women what they want, and made a database with the results. All you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few perfect gift options.</p>
+                <a href="#" class="btn learn-more">Learn more</a>
+            </div>
+            
+        </div>
+        <!--gifts for occasions-->
+        <div class="occassions-gift auto">
+            <div class="heading text-center">
+                <h4>Gifts for all Occasions</h4>
+                <p>“Try our web app to find the best gifts for all occasions”</p>
+            </div>
+            <div class="gift-images flex-row">
+                <div class="gift flex-basis">
+                    <div class="gift-img-1"></div>
+                    <p>Birthday</p>
+                    <p>See More <i class="fa fa-angle-right"></i></p>
+                </div>
+                <div class="gift flex-basis">
+                    <div class="gift-img-2"></div>
+                    <p>Anniversary</p>
+                    <p>See More <i class="fa fa-angle-right"></i></p>
+                </div>
+                <div class="gift flex-basis">
+                    <div class="gift-img-3"></div>
+                    <p class="text-left">Valentine's Day</p>
+                    <p class="text-left">See More <i class="fa fa-angle-right"></i></p>
+                </div>
+                <div class="gift flex-basis">
+                    <div class="gift-img-4"></div>
+                    <p>Christmas</p>
+                    <p>See More <i class="fa fa-angle-right"></i></p>
+                </div>
+            </div>
+        </div>
+        <!--contact-->
+        <div class="contact auto flex-row">
+            <div class="flex-basis container">
+                <h3>Ready to get started?</h3>
+                <p>Sign up or contact us</p>
+            </div>
+            <div class="flex-basis text-center auto">
+                <a href="#" class="find-gift-2">Find gift now</a>
+                <a href="#" class="how-it-works">how it works</a>
+            </div>
+        </div>
+        <!--about-->
+        <div class="about flex-column">
+            <div class="heading text-center">
+                <h3>Our Best Blogs Ever</h3>
+                <p>“Try our blog to find the best tips and tricks to select your gift”</p>
+            </div>
+            <div class="about-img flex-row">
+                <div class="col-4"></div>
+                <div class="text auto col-8 container">
+                    <p>Mr. John Doe</p>
+                    <h3>The best way to wish your wife</h3>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="about-text flex-row auto">
+                <div class="flex-basis first-about-text">
+                    <h4>Database to find the gifts for your girlfriend</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="flex-basis second-about-text">
+                    <h4>How Artificial Intelligence read your mind to find the best gift</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                    <a href="#">Read More</a>
+                </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="flex-row footer-1 auto">
+                <ul class="flex-basis flex-row text-center">
+                    <li class="flex-basis">Home</li>
+                    <li class="flex-basis">About</li>
+                </ul>
+                <p class="flex-basis logo text-center">logo</p>
+                <ul class="flex-basis flex-row text-center">
+                    <li class="flex-basis">Service</li>
+                    <li class="flex-basis">Blog</li>
+                </ul>
+            </div>
+            <hr/>
+            <div class="socials text-center">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="copyright text-center">© 2010 — 2020 Privacy — Terms</div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
+*/
