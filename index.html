@@ -16,14 +16,18 @@
     <!--header-->
         <header class="flex-row">
             <p class="flex-basis logo">logo</p>
-            <ul class="flex-basis text-center menu flex-row">
-                <li class="flex-basis"><a href="#">Home</a></li>
-                <li class="flex-basis"><a href="#">About</a></li>
-                <li class="flex-basis"><a href="#">Services</a></li>
-                <li class="flex-basis"><a href="#">Blogs</a></li>
-            </ul>
+            <nav>
+                <ul class="flex-basis text-center menu flex-row" id="menu">
+                    <li class="flex-basis"><a href="#">Home</a></li>
+                    <li class="flex-basis"><a href="#">About</a></li>
+                    <li class="flex-basis"><a href="#">Services</a></li>
+                    <li class="flex-basis"><a href="#">Blogs</a></li>
+                </ul>  
+            </nav>
             <div class="flex-basis text-right">
-                <a href="#" class="get-finder btn">GET FINDER</a>
+                <a href="#" class="get-finder btn" id="menubtn">GET FINDER</a>
+                <nav class="text-right"><i class="fa fa-2x fa-bars" id="navBtn"></i></nav>
+                <nav class="text-right"><i class="fa fa-2x fa-times" id="navClose"></i></nav>
             </div>
         </header>
     <!--first row-->
@@ -122,16 +126,16 @@
         <footer>
             <div class="footer-first-row flex-row footer-menu">
                 <div class="flex-basis">
-                    <ul class="flex-row">
+                    <ul class="flex-row footer-list">
                         <li class="flex-basis text-right"><a href="#">Home</a></li>
                         <li class="flex-basis text-center"><a href="#">About</a></li>
                     </ul>
                 </div>
                 <div class="flex-basis text-center">
-                    <h4>logo</h4>
+                    <h4 class="logo-footer">logo</h4>
                 </div>
                 <div class="flex-basis">
-                    <ul class="flex-row">
+                    <ul class="flex-row footer-list">
                         <li class="flex-basis text-center"><a href="#">Service</a></li>
                         <li class="flex-basis text-left"><a href="#">Blog</a></li>
                     </ul>
@@ -149,5 +153,6 @@
                 <p>© 2010 — 2020 Privacy — Terms</p>
             </div>
         </footer>
+    <script src="script.js"></script>
 </body>
 </html>
