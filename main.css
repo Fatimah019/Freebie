@@ -196,7 +196,8 @@ header a{
 /*get started*/
 .get-started{
     background-color: #F7941E;
-    height: 200px
+    height: 200px;
+    margin-top:20px;
 }
 .get-started-text{
     margin-left:50px;
@@ -219,7 +220,7 @@ header a{
 
 /*blog*/
 .blog{
-    margin-top:40px auto;
+    margin-top:40px;
     width:80%;
 }
 .blog .heading p{
@@ -245,15 +246,12 @@ header a{
     color: #fff;
     cursor: pointer;
 }
-.blog-texts{
-    height:250px;
-}
 .blog-first-text{
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
-    padding:60px;
+    padding:50px;
 }
 .blog-second-text{
-    padding:60px;
+    padding:40px;
 }
 .blog-first-text h4,.blog-second-text h4,
  .blog-first-text p, .blog-second-text p,
@@ -268,10 +266,10 @@ header a{
 /*footer*/
 footer{
     background-color: #FAFAFA;
-    height:300px;
+    height:250px;
 }
 .footer-first-row {
-    margin-top:40px;
+    margin-top:30px;
     padding:40px 10px 10px 10px;
 }
 hr{
@@ -292,7 +290,28 @@ hr{
     font-size:16px;
     margin:20px 20px 50px 20px;
 }
+
+
 /*media queries*/
+@media screen and (max-width:600px){
+    .first-row, .second-row, .blog-texts,.get-started, .get-started-btns{
+        flex-direction: column;
+    }
+    .second-row, .get-started-text{
+        margin-top:20px;
+    }
+    .get-started-btns{
+        margin-bottom: 20px;
+        padding-top:10px;
+    }
+    .get-started-find-btn{
+        margin-bottom: 10px;
+    }
+    .get-started-text{
+        margin:auto;
+        margin-top:10px;
+    }
+}
 
 /*
 .header{
