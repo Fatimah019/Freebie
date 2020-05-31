@@ -325,9 +325,18 @@ hr{
 }
 
 /*media queries*/
-@media screen and (max-width:480px){
+@media screen and (max-width:600px) and (min-width:360px){
+    #navBtn{
+        display: block;
+    }
+    .get-finder, .menu{
+        display: none;
+    }
     .first-row, .second-row, .blog-texts,.get-started, .get-started-btns, .gift-images{
         flex-direction: column;
+    }
+    .first-row, .second-row{
+        height:1000px;
     }
     .find-gift-first-row h2, .find-gift-first-row p, .find-gift-first-row a{
         margin:auto 30px;
@@ -337,9 +346,6 @@ hr{
     }
     .gift-images img{
         width:100%;
-    }
-    .first-row, .second-row{
-        height:1000px;
     }
     .get-started{
         height:300px;
@@ -357,12 +363,6 @@ hr{
     .get-started-text{
         margin:auto;
         margin-top:10px;
-    }
-    #navBtn{
-        display: block;
-    }
-    .get-finder, .menu{
-        display: none;
     }
 }
 
