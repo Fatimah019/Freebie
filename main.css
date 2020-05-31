@@ -285,7 +285,6 @@ line-height: 140.62%;
 /*footer*/
 footer{
     background-color: #FAFAFA;
-    height:250px;
 }
 .footer-first-row {
     margin-top:30px;
@@ -326,9 +325,15 @@ hr{
 }
 
 /*media queries*/
-@media screen and (max-width:400px){
+@media screen and (max-width:480px){
     .first-row, .second-row, .blog-texts,.get-started, .get-started-btns, .gift-images{
         flex-direction: column;
+    }
+    .find-gift-first-row h2, .find-gift-first-row p, .find-gift-first-row a{
+        margin:auto 30px;
+    }
+    .find-gift-second-row h4, .find-gift-second-row p, .find-gift-second-row a{
+        margin:20px 30px 10px 30px;
     }
     .gift-images img{
         width:100%;
